@@ -17,5 +17,6 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, () => 
   console.log('connected to db')
 })
 
-const port = 3000
+// process.env.PORT  herokus port once deployed
+const port = process.env.PORT || 3000
 app.listen(port, () => 'server running')
