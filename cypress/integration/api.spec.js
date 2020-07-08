@@ -21,4 +21,14 @@ describe('todos API', () => {
         .should('include', { "title": "Buy a new phone" })
     })
   })
+
+
+  describe('GET - 2 todos', () => {
+    it('get two items', () => {
+      cy.request('https://cryptic-sierra-47326.herokuapp.com/todos/count/2')
+        .its('body')
+        .should('have.length', 2)
+    })
+  })
+
 })
