@@ -8,7 +8,7 @@ describe('todos API', function () {
           'content-type': 'application/json'
         },
         body: {
-          "title": `${new Date().toLocaleString()} post`,
+          "title": `${new Date().toLocaleString()} api-post`,
           "completed": false
         }
       }
