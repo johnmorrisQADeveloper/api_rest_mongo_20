@@ -5,8 +5,3 @@ workflows:
   build:
     jobs:
       - cypress/run
-
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
